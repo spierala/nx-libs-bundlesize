@@ -50,6 +50,8 @@ Both libs use RxJS and the JS lib causes a full import of RxJS in the app bundle
 Running `ng build my-app` shows also this warning `Warning: nx-test/apps/my-app/src/app/app-state.service.ts depends on 'my-lib-js'. CommonJS or AMD dependencies can cause optimization bailouts.
 For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies`
 
+### source-map-explorer results:
+
 #### Angular lib (@nrwl/angular)
 ![Screenshot 2022-02-06 at 10 45 15](https://user-images.githubusercontent.com/1272446/152675401-197ade85-a69c-4b39-b0b9-b89c77f03d72.png)
 
