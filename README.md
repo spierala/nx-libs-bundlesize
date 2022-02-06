@@ -9,12 +9,12 @@ The workspace contains two libs and one Angular app:
 
 Both libs contain the same source code, the only difference is: one lib is a TypeScript (@nrwl/js) lib, the other one is an Angular (@nrwl/angular) lib. 
 
-The app imports the compiled js from the compiled libs (from the dist folders) by settings the paths in tsconfig.base.json:
+The app imports the compiled js from the built libs (from the dist folders) by settings the paths in tsconfig.base.json:
 ```
 "paths": {
-      "my-lib-angular": ["dist/libs/my-lib-angular"],
-      "my-lib-js": ["dist/libs/my-lib-js"]
-    }
+  "my-lib-angular": ["dist/libs/my-lib-angular"],
+  "my-lib-js": ["dist/libs/my-lib-js"]
+}
 ```
 
 The app contains a file app-state.service.ts where the import from the lib can be toggled.
@@ -55,3 +55,10 @@ For more info see: https://angular.io/guide/build#configuring-commonjs-dependenc
 
 #### JS lib (@nrwl/js)
 ![Screenshot 2022-02-06 at 10 46 06](https://user-images.githubusercontent.com/1272446/152675421-ccd173b6-630b-4667-be1a-96c747b5b42d.png)
+
+## Notes
+@nrwl/js seems to output CommonJS by default. CommonJS settings can be found back in the libs tsconfig.json and package.json
+
+@nrwl/angular outputs many module formats.
+
+See here: 
