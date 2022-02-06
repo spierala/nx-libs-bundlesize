@@ -66,3 +66,9 @@ For more info see: https://angular.io/guide/build#configuring-commonjs-dependenc
 See here:
 
 ![Screenshot 2022-02-06 at 10 56 36](https://user-images.githubusercontent.com/1272446/152675743-6913d0c5-80c7-43e1-8bd2-18543a2ddbfb.png)
+
+### @nrwl/web
+Also tried @nrwl/web (`nx generate @nrwl/web:library my-lib-web --publishable`) but it does even create a build target in project.json:
+
+![Screenshot 2022-02-06 at 12 17 05](https://user-images.githubusercontent.com/1272446/152678318-7d501b6b-abc1-4a6d-bb83-8d3c3c383c0f.png)
+
