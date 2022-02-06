@@ -15,9 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-test/my-lib": ["libs/my-lib/src/index.ts"],
-      "my-lib-js": ["dist/libs/my-lib-js"],
-      "my-lib-angular": ["dist/libs/my-lib-angular"]
+      "my-lib-angular": ["dist/libs/my-lib-angular"],
+      "my-lib-js": ["dist/libs/my-lib-js"]
     }
   },
   "exclude": ["node_modules", "tmp"]
