@@ -4,6 +4,7 @@
     "my-app": "apps/my-app",
     "my-app-e2e": "apps/my-app-e2e",
     "my-lib": "libs/my-lib",
+    "my-lib-angular": "libs/my-lib-angular",
     "my-lib-js": "libs/my-lib-js"
   }
 }

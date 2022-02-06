@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/my-lib-angular",
+  "sourceRoot": "libs/my-lib-angular/src",
+  "prefix": "nx-test",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/my-lib-angular"],
+      "options": {
+        "project": "libs/my-lib-angular/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/my-lib-angular/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/my-lib-angular/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/my-lib-angular"],
+      "options": {
+        "jestConfig": "libs/my-lib-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/my-lib-angular/src/**/*.ts",
+          "libs/my-lib-angular/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
