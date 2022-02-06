@@ -61,4 +61,6 @@ For more info see: https://angular.io/guide/build#configuring-commonjs-dependenc
 
 @nrwl/angular outputs many module formats.
 
-See here: 
+See here:
+
+![Screenshot 2022-02-06 at 10 56 36](https://user-images.githubusercontent.com/1272446/152675743-6913d0c5-80c7-43e1-8bd2-18543a2ddbfb.png)
