@@ -1,0 +1,8 @@
+{
+  "name": "@nx-test/my-lib-js",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "peerDependencies": {
+    "rxjs": "^6.4.0 || ^7.0.0"
+  }
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppStateService } from './app-state.service';
 
 @Component({
   selector: 'nx-test-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  constructor(private appStateService: AppStateService) {
+  }
 }
